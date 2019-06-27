@@ -1,0 +1,3 @@
+flask
+uWSGI
+flake8
