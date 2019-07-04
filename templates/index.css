@@ -1,3 +1,12 @@
 .active{
     box-shadow: 30px 20px 20px black;
 }
+
+body {
+    background-image: url('../static/backazul.png');
+    background-size: cover;
+}
+
+h1 {
+    text-shadow: 2px 2px black;
+}
