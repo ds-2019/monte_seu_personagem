@@ -10,7 +10,52 @@
 </head>
 
 <body>
-    <h1 style="padding-left:30%; padding-bottom:3%; padding-top: 5%; color: blanchedalmond">Monte seu personagem</h1>
+    <h1 style="padding-left:30%; padding-bottom:3%; padding-top: 5%; color: blanchedalmond; text-shadow: 2px 2px black;">Ficha do personagem</h1>
+    <div style="margin-left: 20%; margin-right: 20%">
+        <table class="table table-dark">
+            <tbody>
+            <tr>
+                <th scope="row">Nome</th>
+                <td>{{personagem.nome}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Idade</th>
+                <td>{{personagem.idade}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Escolaridade</th>
+                <td>{{personagem.escolaridade}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Estado de origem</th>
+                <td>{{personagem.estado}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Personagem</th>
+                <td>{{personagem.personagem}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+      <script>
+            if($( "body > div > table > tbody > tr:nth-child(5) > td" ).text() === "Mulher Branca"){
+                $("body").css("background-image", "url('../static/backazul.png')"); 
+                $("body").css("background-size", "cover");    
+            }
+            if($( "body > div > table > tbody > tr:nth-child(5) > td" ).text() === "Homem Negro"){
+                $("body").css("background-image", "url('../static/backvermelho.png')");
+                $("body").css("background-size", "cover");    
+            }            
+            if($( "body > div > table > tbody > tr:nth-child(5) > td" ).text()=== "Mulher Negra"){
+                $("body").css("background-image", "url('../static/backverde.png')");    
+                $("body").css("background-size", "cover");
+            }            
+            if($( "body > div > table > tbody > tr:nth-child(5) > td" ).text() === "Homem Branco"){
+                $("body").css("background-image", "url('../static/backcinza.png')");
+                $("body").css("background-size", "cover");    
+            }
+        
+    </script>
 </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

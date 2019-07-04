@@ -46,19 +46,19 @@
                 
                 <div class="row" id="player" >
                         <label class="btn">
-                            <input type="radio" name="personagem" value="blue" id="blue_id" checked>
+                            <input type="radio" name="personagem" value="Mulher Branca" id="blue_id" checked>
                             <img src="../static/blue.png">
                         </label>
                         <label class="btn">
-                            <input type="radio" name="personagem" value="red" id="red_id">
+                            <input type="radio" name="personagem" value="Homem Negro" id="red_id">
                             <img src="../static/red.png">
                         </label>
                         <label class="btn">
-                            <input type="radio" name="personagem" value="green" id="green_id">
+                            <input type="radio" name="personagem" value="Mulher Negra" id="green_id">
                             <img src="../static/green.png">
                         </label>
                         <label class="btn">
-                            <input type="radio" name="personagem" value="gray" id="gray_id">
+                            <input type="radio" name="personagem" value="Homem Branco" id="gray_id">
                             <img src="../static/gray.png">
                         </label>           
                     
@@ -75,19 +75,19 @@
 
     <script>
         $("#player label" ).on( "click", function() {
-            if($( "input:checked" ).val() === "blue"){
+            if($( "input:checked" ).val() === "Mulher Branca"){
                 $("body").css("background-image", "url('../static/backazul.png')"); 
                 $("body").css("background-size", "cover");    
             }
-            if($( "input:checked" ).val() === "red"){
+            if($( "input:checked" ).val() === "Homem Negro"){
                 $("body").css("background-image", "url('../static/backvermelho.png')");
                 $("body").css("background-size", "cover");    
             }            
-            if($( "input:checked" ).val() === "green"){
+            if($( "input:checked" ).val() === "Mulher Negra"){
                 $("body").css("background-image", "url('../static/backverde.png')");    
                 $("body").css("background-size", "cover");
             }            
-            if($( "input:checked" ).val() === "gray"){
+            if($( "input:checked" ).val() === "Homem Branco"){
                 $("body").css("background-image", "url('../static/backcinza.png')");
                 $("body").css("background-size", "cover");    
             }
