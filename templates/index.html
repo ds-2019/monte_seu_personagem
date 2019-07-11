@@ -21,49 +21,60 @@
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <div class="form-group">
-                            <label for="nome">Nome</label>
+                            <label class="form-label" for="nome">Nome</label>
                             <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome">
                         </div>
                         
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Idade</label>
+                            <label class="form-label" for="exampleInputPassword1">Idade</label>
                             <input type="text" name="idade" class="form-control" id="Idade" placeholder="Idade">
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="form-group">
-                            <label for="Escolaridade">Escolaridade</label>
+                            <label class="form-label" for="Escolaridade">Escolaridade</label>
                             <input type="text" name="escolaridade" class="form-control" id="Escolaridade" placeholder="Escolaridade">
                         </div>
                         
                         <div class="form-group">
-                            <label for="estado_origem">Estado de origem</label>
+                            <label class="form-label" for="estado_origem">Estado de origem</label>
                             <input type="text" name="estado" class="form-control" id="estado_origem" placeholder="Estado de origem">
                         </div>
                     </div>
                         
                 </div>
                 
-                <div class="row" id="player" >
+                <div class="row" id="player">
+                    <div class="column" style="padding: 20px"> 
                         <label class="btn">
                             <input type="radio" name="personagem" value="Mulher Branca" id="blue_id" checked>
                             <img src="../static/blue.png">
                         </label>
+                        <p>Mulher Branca</p>
+                    </div>
+                    <div class="column" style="padding: 20px">
                         <label class="btn">
                             <input type="radio" name="personagem" value="Homem Negro" id="red_id">
                             <img src="../static/red.png">
                         </label>
+                        <p >Homem Negro</p>
+                    </div>
+                    <div class="column" style="padding: 20px">
                         <label class="btn">
                             <input type="radio" name="personagem" value="Mulher Negra" id="green_id">
                             <img src="../static/green.png">
                         </label>
+                        <p >Mulher Negra</p>
+                    </div>
+                    <div class="column" style="padding: 20px">
                         <label class="btn">
                             <input type="radio" name="personagem" value="Homem Branco" id="gray_id">
                             <img src="../static/gray.png">
                         </label>           
-                    
+                        <p>Homem Branco</p>
+                    </div>
                 </div>
-                <div style="padding-top: 20px">
+                <div style="padding-top: 20px" style="padding: 20px">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>

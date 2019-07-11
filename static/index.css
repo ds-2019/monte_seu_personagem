@@ -10,3 +10,14 @@ body {
 h1 {
     text-shadow: 2px 2px black;
 }
+
+
+p {
+    text-shadow: 2px 2px black;
+    color: white;
+}
+
+label.form-label {
+    text-shadow: 2px 2px black;
+    color: white;
+}

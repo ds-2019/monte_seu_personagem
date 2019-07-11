@@ -12,6 +12,9 @@
 <body>
     <h1 style="padding-left:30%; padding-bottom:3%; padding-top: 5%; color: blanchedalmond; text-shadow: 2px 2px black;">Ficha do personagem</h1>
     <div style="margin-left: 20%; margin-right: 20%">
+        <div>
+            <img id="imagem" src="../static/blue.png" alt="">
+        </div>        
         <table class="table table-dark">
             <tbody>
             <tr>
@@ -34,25 +37,36 @@
                 <th scope="row">Personagem</th>
                 <td>{{personagem.personagem}}</td>
             </tr>
+            <tr>
+                <th scope="row">Salario</th>
+                <td>{{personagem.salario}}</td>
+            </tr>
             </tbody>
         </table>
     </div>
-      <script>
+    <script>
             if($( "body > div > table > tbody > tr:nth-child(5) > td" ).text() === "Mulher Branca"){
-                $("body").css("background-image", "url('../static/backazul.png')"); 
+                $("body").css("background-image", "url('../static/backazul.png')");
+                $("#imagem").attr("src", "../static/blue.png"); 
                 $("body").css("background-size", "cover");    
             }
             if($( "body > div > table > tbody > tr:nth-child(5) > td" ).text() === "Homem Negro"){
                 $("body").css("background-image", "url('../static/backvermelho.png')");
                 $("body").css("background-size", "cover");    
+                $("#imagem").attr("src", "../static/red.png"); 
+                
             }            
             if($( "body > div > table > tbody > tr:nth-child(5) > td" ).text()=== "Mulher Negra"){
                 $("body").css("background-image", "url('../static/backverde.png')");    
                 $("body").css("background-size", "cover");
+                $("#imagem").attr("src", "../static/green.png"); 
+                
             }            
             if($( "body > div > table > tbody > tr:nth-child(5) > td" ).text() === "Homem Branco"){
                 $("body").css("background-image", "url('../static/backcinza.png')");
                 $("body").css("background-size", "cover");    
+                $("#imagem").attr("src", "../static/gray.png"); 
+                
             }
         
     </script>
